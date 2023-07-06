@@ -24,6 +24,14 @@ function createGrid(gridx,gridy){
 }
 
 
-
+const button = document.querySelector('button')
+button.addEventListener('click',(e) =>{
+    const squares = prompt("How many squares per side do you want for the grid?","16");
+    while (container.hasChildNodes()) {
+        container.removeChild(container.firstChild);
+      }
+    createGrid(parseInt(squares),parseInt(squares));
+});
 createGrid(gridx,gridy);
+
 

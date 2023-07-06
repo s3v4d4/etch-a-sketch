@@ -3,6 +3,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .container {
@@ -11,4 +13,12 @@ body {
     max-height: 850px;
     display: flex;
     flex-wrap: wrap;
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    background-color: lightblue;
+    border-radius: 10px;
+    font-weight: bold;
 }
